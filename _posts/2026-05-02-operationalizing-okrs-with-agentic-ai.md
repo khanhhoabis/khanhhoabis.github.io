@@ -7,9 +7,22 @@ tags: [AI, AgenticAI, BusinessStrategy]
 description: "Explore how organizations are moving beyond traditional OKRs to Intent Engineering, aligning human and AI teams toward business goals."
 ---
 
+![Operationalizing OKRs with Agentic AI](/assets/image/posts/okr-agentic-ai-hero.png)
+
 # The Future of Execution: From OKRs to Intent Engineering
 
 In the rapidly evolving landscape of 2026, the divide between business strategy and operational execution is narrowing. For years, the **Strategy-Execution Gap** has haunted organizations, with nearly 65% admitting their Objectives and Key Results (OKRs) are disconnected from top-level strategy. However, a new paradigm is emerging: **Intent Engineering.**
+
+```mermaid
+graph TD
+    A[Business Strategy] -->|Defines Intent| B(Intent Engineering)
+    B -->|Translates to| C{Agent-Readable OKRs}
+    C -->|Human Teams| D[Actionable Tasks]
+    C -->|AI Agents| E[Autonomous Execution]
+    D --> F[Real-time Data Stream]
+    E --> F
+    F -->|Continuous Alignment| B
+```
 
 ## 1. The Strategy-Execution Gap in the Age of AI
 
