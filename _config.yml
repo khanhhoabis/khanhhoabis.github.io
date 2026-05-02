@@ -6,10 +6,16 @@ url: "https://khanhhoabis.github.io" # the base hostname & protocol for your sit
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-primer # Fallback theme, but we use custom layouts
+remote_theme: just-the-docs/just-the-docs
+
+# Theme settings
+search_enabled: true
+nav_enabled: true
+heading_anchors: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme # Added for better compatibility with GH Pages themes
 
 # Exclude from processing.
 exclude:
