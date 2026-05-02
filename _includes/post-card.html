@@ -1,0 +1,20 @@
+<article class="feed-item">
+    <div class="feed-img" style="background: {{ post.image_bg | default: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)' }};">
+        {% if post.tags contains 'Strategy' %}
+            <i class="fa-solid fa-chart-pie"></i>
+        {% elsif post.tags contains 'Data' %}
+            <i class="fa-solid fa-database"></i>
+        {% elsif post.tags contains 'AI' %}
+            <i class="fa-solid fa-microchip"></i>
+        {% else %}
+            <i class="fa-solid fa-newspaper"></i>
+        {% endif %}
+    </div>
+    <div class="feed-content">
+        <div class="tag">{{ post.tags | join: ' • ' | upcase }}</div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <div class="meta">{{ post.date | date: "%b %d, %Y" }} • {{ post.content | number_of_words | divided_by: 200 | plus: 1 }} min read</div>
+        <a href="{{ post.url | relative_url }}" class="read-more">Đọc tiếp <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+</article>

@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Adaptive Strategy: Biến OKRs thành Động cơ Tăng trưởng bằng Predictive Analytics"
-date: 2026-05-02
-categories: Strategy Data OKRs
+date: 2026-05-02 10:00:00 +0700
+tags: [Strategy, OKRs, Data]
+image_bg: "linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)"
+featured: true
+description: "Khám phá cách kết hợp Predictive Analytics vào hệ thống OKRs để tối ưu hóa hiệu suất doanh nghiệp."
 ---
 
 # Adaptive Strategy: Biến OKRs thành Động cơ Tăng trưởng bằng Predictive Analytics

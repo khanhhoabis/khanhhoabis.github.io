@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ "/index.css" | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    {% seo %}
+</head>
+<body>
+    <div class="bg-mesh"></div>
+
+    <nav>
+        <div class="logo">KHANH HOA</div>
+        <div class="nav-links">
+            <a href="{{ "/#featured" | relative_url }}">Nổi bật</a>
+            <a href="{{ "/#feed" | relative_url }}">Bản tin</a>
+            <a href="{{ "/#about" | relative_url }}">Về tôi</a>
+            <a href="{{ "/#contact" | relative_url }}">Liên hệ</a>
+        </div>
+    </nav>
+
+    {{ content }}
+
+    <section id="contact" class="contact-section">
+        <h2>Bắt đầu kết nối</h2>
+        <p>Bạn có dự án hoặc ý tưởng cần thảo luận? Hãy liên hệ với tôi.</p>
+        <div class="contact-btns">
+            <a href="#" class="btn btn-primary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:contact@khanhhoa.me" class="btn btn-outline">Gửi Email</a>
+        </div>
+    </section>
+
+    <footer style="padding: 4rem 10%; border-top: 1px solid var(--glass-border); text-align: center; color: var(--text-dim); font-size: 0.9rem;">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author | default: "Khanh Hoa" }}. All rights reserved. Designed for impact.</p>
+    </footer>
+
+    <script src="{{ "/main.js" | relative_url }}"></script>
+</body>
+</html>

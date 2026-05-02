@@ -1,1 +1,22 @@
-theme: jekyll-theme-hacker
+title: Khanh Hoa | Strategy, Data & OKRs
+description: "Chuyên gia về Chiến lược, Dữ liệu và OKRs. Giúp các tổ chức tối ưu hóa hiệu suất thông qua tư duy hệ thống."
+email: your-email@example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://khanhhoabis.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer # Fallback theme, but we use custom layouts
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

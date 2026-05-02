@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<header id="featured">
+    {% assign featured_post = site.posts | where: "featured", true | first %}
+    {% unless featured_post %}
+        {% assign featured_post = site.posts | first %}
+    {% endunless %}
+    
+    <div class="hero-container">
+        <div class="featured-tag">FEATURED INSIGHT</div>
+        <h1>{{ featured_post.title }}</h1>
+        <p class="hero-description">
+            {{ featured_post.description | default: featured_post.excerpt | strip_html | truncatewords: 40 }}
+        </p>
+        <div class="hero-btns">
+            <a href="{{ featured_post.url | relative_url }}" class="btn btn-primary">Đọc bài viết nổi bật</a>
+        </div>
+    </div>
+</header>
+
+<main class="main-layout">
+    <section id="feed" class="feed-section">
+        <h2 class="section-title">Bản tin mới nhất</h2>
+        
+        {{ content }}
+    </section>
+
+    {% include sidebar.html %}
+</main>
